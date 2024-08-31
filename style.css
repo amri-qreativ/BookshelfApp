@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    margin: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(79, 199, 255, 0.5) 40%, rgb(67, 161, 255, 0.5) 60%);
+    overflow: auto;
+}
+
+section.input_section {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+section.input_section > h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+form#inputBook > .input > input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+form#inputBook > .input > input:focus {
+    outline-style: none;
+}
+
+form#inputBook > button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin: 10px 0px;
+    background-color: #3284ff;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1), -2px 2px 5px rgba(0, 0, 0, 0.1), 2px -2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+form#inputBook > button:active,
+section.search_section >  form#searchBook > button:active {
+    box-shadow: none;
+    transform: translate(2px,2px);
+}
+
+form#inputBook > .input_inline {
+    display: flex;
+    align-items: center;
+}
+
+form#inputBook > .input_inline > input[type=checkbox]{
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+section.search_section {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+section.search_section > h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+section.search_section >  form#searchBook > input {
+    width: 85%;
+    height: 35px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+section.search_section >  form#searchBook > button {
+    width: 14%;
+    height: 35px;
+    border: none;
+    background-color: #3284ff;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1), -2px 2px 5px rgba(0, 0, 0, 0.1), 2px -2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+.book_shelf > .book_list {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+article.book_item  {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1), -2px 2px 5px rgba(0, 0, 0, 0.1), 2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article.book_item  > *{
+    margin: 3px 0;
+}
+article.book_item  > .action{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+article.book_item  > .action > * {
+    border: none;
+    height: 20px;
+    cursor: pointer;
+    transition: .1s ease;
+    margin: 0 5px;
+}
+
+article.book_item  > .action > button:first-child {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(assets/check.svg);
+    background-size: cover;
+    
+}
+
+article.book_item  > .action > button:last-child {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(assets/delete.svg);
+    background-size: cover;
+}
+
+article.book_item  > .action > *:active {
+    transform: translate(1px,1px);
+}
+.belumselesai {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(assets/refresh.svg) !important;
+    background-size: cover;
+}
